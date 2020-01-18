@@ -22,4 +22,4 @@ document.writeln("y(14) * 5 = 70<br>z(4) - x(6) = -2<br>-2 + 70 = 68<br>x++<hr>"
 x = 6; y = 14; z = 4;
 x = y - x++ * z;
 document.writeln("<p>x = y - x++ * z; ответ: " + x + "</p>");
-document.writeln("x(6) * z(4) = 24<br>y(14) - 24 = -10<hr>");
+document.writeln("x(6) * z(4) = 24<br>y(14) - 24 = -10<br>x++<hr>");
