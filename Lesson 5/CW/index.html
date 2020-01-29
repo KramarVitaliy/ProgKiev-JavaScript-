@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 5(CW)</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <footer>
+    <div class="logo"></div>
+    <div class="name">Crypto wallet</div>
+  </footer>
+  <main>
+    <form action="">
+      <fieldset>
+        <legend>Data User</legend>
+        <p><label>Введите ваше имя: <input type="text" id="user-name"></label></p>
+        <p><label>Какую криптовалюту проверяем? 
+          <select id="name-wallet">
+            <option value="bitcoin">Bitcoin</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="stellar">Stellar</option>
+          </select></label></p>
+          <p><input type="button" value="Check" onclick="cryptoWallet.info(this)"></p>
+      </fieldset>
+    </form>
+    <div id="result" rows="10"></div>
+  </main>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
