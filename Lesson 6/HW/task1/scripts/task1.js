@@ -1,21 +1,25 @@
-function Human(name, age) {
-  this.name = name;
-  this.age = age;
+class Human {
+  constructor(name, age, debt){
+    this.name = name;
+    this.age = age;
+    this.debt = debt;
+  }
+  
 }
 
 const humans = new Array();
 
-var myApp = {
+const myApp = {
   createHuman: function() {
-    let name = prompt("Name");
-    let age = +prompt("Age");
-    myApp.chelovek = new Human(name, age);
-    humans.push(myApp.chelovek);
+    let name = prompt(`Name`);
+    let age = +prompt(`Age`);
+    const chelovek = new Human(name, age);
+    humans.push(chelovek);
   },
   outputArray: function () {
-    for (let i = 0; i < humans.length; i++) {
-      document.getElementById('humans').insertAdjacentHTML('beforeend', "Имя: " + humans[i].name + " | Возраст: " + humans[i].age + "\n");
-    }
+    humans.forEach(element => {
+      document.getElementById('humans').insertAdjacentHTML('beforeend', `Имя: ${element.name} | Возраст: ${element.age} \n`);
+    });
   },
   sortArray: function () {
     humans.sort(function (a, b) {
@@ -28,6 +32,6 @@ var myApp = {
     });
   },
   clearDiv: function () {
-    document.getElementById('humans').innerHTML = ("");
+    document.getElementById('humans').innerHTML = (``);
   }
 };
