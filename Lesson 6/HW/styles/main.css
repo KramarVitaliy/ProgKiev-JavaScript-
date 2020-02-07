@@ -23,6 +23,7 @@ main{
   font-family: 'Lobster';
   padding: 20px;
   border: 0;
+  outline: none;
 }
 
 .tasks input:hover{

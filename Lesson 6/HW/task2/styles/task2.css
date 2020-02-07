@@ -39,6 +39,7 @@ nav input[type=button]{
   border-radius: 50px;
   font-family: 'Lobster';
   padding: 20px;
+  outline: none;
 }
 
 nav input[type=button]:hover{
@@ -54,6 +55,7 @@ nav input[type=text]{
   padding: 10px;
   font-size: 1.5em;
   text-align: center;
+  outline: none;
   
 }
 
