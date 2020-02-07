@@ -3,18 +3,19 @@ class Human {
     this.name = name;
     this.age = age;
     this.debt = debt;
-    this.getDebt = function() {
-      this.debt = true;
-    }
   }
-  
 };
+
+Human.prototype.getDebt = function() {
+  this.debt = true;
+}
 
 Human.constructor.delDebt = function() {
   let password = prompt('');
   if (password == 'Philip') {
     let getDebt = document.getElementById('debt').value;
     humans[getDebt-1].debt = false;
+    myApp.outputArray();
   } else {
     alert('Ай-йа-яй, у вас нет такого права!!');
   }
@@ -30,6 +31,7 @@ const myApp = {
     let debt = confirm(`У студента есть задолженности?`);
     const chelovek = new Human(name, age, debt);
     humans.push(chelovek);
+    myApp.outputArray();
   },
   outputArray: function () {
     document.getElementById('humans').innerHTML = (``);
@@ -48,14 +50,17 @@ const myApp = {
     humans.sort(function (a, b) {
       return a.age-b.age;
     });
+    myApp.outputArray();
   },
   sortNegativeArray: function () {
     humans.sort(function (a, b) {
       return b.age-a.age;
     });
+    myApp.outputArray();
   },
   addDebt(){
     let getDebt = document.getElementById('debt').value;
     humans[getDebt-1].getDebt();
+    myApp.outputArray();
   }
 };
