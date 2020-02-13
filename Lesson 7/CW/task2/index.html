@@ -4,8 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson 7(Task2)</title>
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
+  <form action="">
+    <fieldset>
+      <legend>Форма регистрации</legend>
+      <label >Ваше имя:</label><input type="text" id="firstname"><br>
+      <label >Ваша фамилия:</label><input type="text" id="lastname"><br>
+      <label >Ваша дата рождения(в формате mm.dd.yyyy):</label><input type="text" id="birthday"><br>
+      <input type="button" value="Add user" onclick="myApp.Login();"><br>
+    </fieldset>
+  </form>
   
   <script src="./scripts/script.js"></script>
 </body>
