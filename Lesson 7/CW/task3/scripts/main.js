@@ -10,9 +10,9 @@ const myApp = {
       surname : "Kramar"
     }],
   filterBy : function (array , type) {
-    const result = array.filter(elem => typeof elem == type);
+    const result = array.filter(elem => typeof elem != type);
     console.log(result);
   }
 };
 
-myApp.filterBy(myApp.arr, "object");
+myApp.filterBy(myApp.arr, "string");
