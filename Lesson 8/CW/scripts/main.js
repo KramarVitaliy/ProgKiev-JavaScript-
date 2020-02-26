@@ -4,12 +4,16 @@ const root = document.querySelector('#root');
 
 request.open('GET', requestURL);
 request.responseType = 'json';
+
+request.addEventListener("readystatechange", e => {
+  if (request.readyState == 4 && request.status == 200) {
+    const wallet = request.response;
+    courseWallet(wallet);
+  }
+})
+
 request.send();
 
-request.onload = function() {
-  const wallet = request.response;
-  courseWallet(wallet);
-};
 
 function courseWallet(jsonObj) {
   jsonObj.forEach(element => {
