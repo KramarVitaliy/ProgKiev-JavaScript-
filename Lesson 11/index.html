@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./fonts/fontawesome-free-5.12.1-web/css/all.css">
   <link rel="stylesheet" href="./styles/form.css">
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="./slick/slick-theme.css">
 </head>
 <body>
   <header class="header-wrap">
@@ -71,6 +73,17 @@
     </div>
   </nav>
   <main>
+    <section class="lazy slider" data-sizes="50vw">
+      <div>
+        <img src="./media/slider/3.jpg">
+      </div>
+      <div>
+        <img src="./media/slider/Untitled-1.jpg">
+      </div>
+      <div>
+        <img src="./media/slider/слайдер-фотошоп2-938x340.jpg">
+      </div>
+    </section>
     <h1>Конструктор пиццы</h1>
     <div class="constructor">
       <div class="constructor__area">
@@ -113,18 +126,79 @@
   </footer>
   <div class="form-wrapper" id="form-order">
     <div class="form">
-      <form action="#" autocomplete="on">
+      <form action="./b0.php" method="POST" target="_blank" autocomplete="on">
         <p class="form-header">Login to Web App</p>
         <fieldset>
-        <p class="login"><input type="email" placeholder="Email" autofocus></p>
-        <p class="name"><input type="text" placeholder="Имя"></p>
+        <p class="login"><input type="email" placeholder="Email" autofocus name="email1"></p>
+        <p class="phone"><input type="phone" placeholder="Your phone" name="phone1"></p>
+        <p class="name"><input type="text" placeholder="Имя" name="name1"></p>
         <div class="form-footer">
-          <button type="submit"><p>Оформить</p></button>
+          <p></p><input type="submit" value="Оформить"  name="sab"></p>
         </div>
         </fieldset>
               </form>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script src="./scripts/main.js"></script>
+  <script src="./slick/slick.js"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".vertical-center-4").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 2
+      });
+      $(".vertical-center-3").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".vertical-center-2").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+      });
+      $(".vertical-center").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+      });
+      $(".vertical").slick({
+        dots: true,
+        vertical: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 5,
+        slidesToScroll: 3
+      });
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+    });
+</script>
 </body>
 </html>

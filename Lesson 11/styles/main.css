@@ -322,3 +322,7 @@ form #form-button{
 form #form-price{
   justify-content: center;
 }
+/* SLIDER */
+.slick-prev, .slick-next{
+  
+}
