@@ -1,0 +1,111 @@
+body {
+  background-color: #4fabd3;
+}
+
+.form {
+  background-color: #ffffff;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+}
+.form-wrapper {
+  width: 400px;
+  background-color: #4995b5;
+  border: 10px solid #4995b5;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+fieldset {
+  margin-top: 4%;
+  border: none;
+  padding: 0;
+  padding-left: 5%;
+}
+
+.form-header {
+  background-color: #f9fafa;
+  padding: 16px 0;
+  text-align: center;
+  border-bottom: 1px solid #cfcfcf;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+form .login, .password {
+  padding: 0;
+  width: 90%;
+  border: 10px solid #f1f4f7;
+  border-radius: 3px;
+}
+
+.form input[type=email], input[type=password]{
+  border: 2px solid #c4c4c4;
+  border-radius: 3px;
+  font-size: 20px;
+  width: 100%;
+  height: 40px;
+  color: #c9c9cd;
+}
+.form input[type=submit]{
+  background-color: #dfecf2;
+  color:#5c7b91;
+  border-radius: 30px;
+  border: 0.5px solid #bbcccf;
+  width: 20%;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, .2);
+  cursor: pointer;
+  outline: none;
+}
+
+.form input[type=submit]:active{
+  border: green;
+}
+
+.form .form-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 6%;
+  margin-bottom: 5%;
+}
+.form .form-footer label {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.form .form-footer input[type=checkbox] {
+  height: 18px;
+  width: 18px;
+}
+
+.form-caption {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.form-caption a {
+  text-decoration: none;
+  color: #d8ebfa;
+}
+
+.out{
+  text-align: center;
+}
+
+.succes{
+  color: green;
+  display: none;
+  text-align: center;
+  padding: 5px 0;
+}

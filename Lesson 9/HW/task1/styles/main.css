@@ -1,0 +1,44 @@
+body{
+  margin: 0 0;
+  
+}
+h1{
+  margin: 0 0;
+}
+
+input[type=button]{
+  cursor: pointer;
+  font-size: 24px;
+  outline: none;
+  background-color: aquamarine;
+  border: 2px solid aqua;
+  border-radius: 20px;
+}
+
+input[type=button]:active{
+  border-color: green;
+}
+
+header {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+}
+
+main{
+  height: 200px;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.result{
+  display: none;
+  color: red;
+}
+
